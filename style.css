@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
+
+/* quick reset so all our padding is the right size */
+* {
+  box-sizing: border-box;
+}
+
+#myTitle {
+    color: red;
+    text-shadow: 2px 2px grey;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+#myInput {
+    color:rgb(117,117,117);
+    grid-column: span 2;
+    padding: 20px;
+    background-color: rgb(192,192,192);
+    /* opacity: 0.8; */
+}
+
+.calculator input,
+.calc-button   {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* add some spacing */
+body {
+  background: #F6F6F6;
+  padding-bottom: 30px;
+  padding-top: 30px;  
+}
+
+/* limit the width and center */
+.calculator {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid #111;
+  border-radius: 5px;
+  background-color: rgb(0, 217, 255);
+}
+
+.calculator input   {
+  /* reset basic form styles */
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+
+  padding: 20px 10px;
+  width: 100%;
+  border-bottom: 2px solid #111;
+  /* color: #333; */
+  text-align: right;
+  font-size: 40px;
+  border-radius: 0;
+}
+
+.calc-button  {
+  background: rgba(0, 0, 0, 0.5); /* light background with opacity 50% */
+  border: 1px solid #111; /* black border */
+  padding: 20px;
+  color: #EEE; /* white text */
+  border-radius: 5px; /* rounded corners */
+  font-size: 22px; /* larger fonts */
+  cursor: pointer; /* make it look clickable */
+}
+
+.calculator-buttons {
+  /* small spacing within our container */
+  padding: 20px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* add the grid gap */
+  grid-gap: 15px;
+}
+.calculator-first {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+.calculator-last {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+
+/* go blue */
+.is-clear   {
+    grid-column: span 4;
+    background: #3572DB;
+}
+
+.is-delete {
+    color: orange;
+    grid-column: span 1;
+}
+.is-zero {
+    grid-column: span 1;
+  }
+.is-equals {
+    grid-column: span 1;
+    background: #28D060;
+}
